@@ -13,9 +13,9 @@
         <th>Publisher</th>
     </tr>
     <tr th:each="book : ${books}">
-        <td th:text="${springproject.firstwebapp.domain.Book.id}">123</td>
-        <td th:text="${springproject.firstwebapp.domain.Book.title}"> Spring in Action</td>
-        <td th:text="${springproject.firstwebapp.domain.Book.publisher.name}">Wrox</td>
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.title}"> Spring in Action</td>
+        <td th:text="${book.publisher.name}">Wrox</td>
     </tr>
 </table>
 

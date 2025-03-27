@@ -13,9 +13,9 @@
         <th>Lastname</th>
     </tr>
     <tr th:each="author : ${authors}">
-        <td th:text="${springproject.firstwebapp.domain.Author.id}">123</td>
-        <td th:text="${springproject.firstwebapp.domain.Author.firstname}">John</td>
-        <td th:text="${springproject.firstwebapp.domain.Author.lastname}">Wrox</td>
+        <td th:text="${author.id}">123</td>
+        <td th:text="${author.firstname}">John</td>
+        <td th:text="${author.lastname}">Wrox</td>
     </tr>
 </table>
 </body>
